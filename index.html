@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/style.css" />
+    <title>Sea Battle Game</title>
+  </head>
+  <body>
+    <div id="controls">
+      <button id="start-button">Start</button>
+      <button id="pause-button">Pause</button>
+      <button id="stop-button">Stop</button>
+      <button id="theme-switch">Switch Theme</button>
+      <label>
+        <input type="radio" name="mode" value="player-computer" checked />
+        Player vs Computer
+      </label>
+      <label>
+        <input type="radio" name="mode" value="computer-computer" /> Computer vs
+        Computer
+      </label>
+      <label>
+        <input type="radio" name="ship-placement" value="manual" checked />
+        Manual Placement
+      </label>
+      <label>
+        <input type="radio" name="ship-placement" value="automatic" /> Automatic
+        Placement
+      </label>
+    </div>
+    <div id="boards">
+      <div id="player-board" class="board"></div>
+      <div id="computer-board" class="board"></div>
+    </div>
+    <script src="./src/js/main.js"></script>
+  </body>
+</html>
